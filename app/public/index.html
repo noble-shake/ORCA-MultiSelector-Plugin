@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MultiSelector Board</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="title">
+      <h1>MultiSelector</h1>
+      <span class="run" id="run">run —</span>
+    </div>
+    <div class="status" id="status" role="status">연결 중…</div>
+  </header>
+
+  <p class="hint">후보를 고르고 <strong>선택 복사</strong>를 누른 뒤, 복사된 한 줄을 리드 에이전트 대화창에 붙여 넣으세요.
+    보드는 읽기만 하며 워커에게 직접 보내지 않습니다.</p>
+
+  <main class="columns" id="columns"></main>
+  <p class="empty" id="empty" hidden>아직 워커 출력이 없습니다. 워커가 <code>options.json</code>을 쓰면 여기에 나타납니다.</p>
+
+  <footer class="copied" id="copied" hidden>
+    <span class="copied-label">마지막 복사</span>
+    <code id="copied-text"></code>
+    <button type="button" id="copy-again">다시 복사</button>
+  </footer>
+
+  <dialog id="viewer">
+    <button type="button" class="close" id="viewer-close" aria-label="닫기">✕</button>
+    <img id="viewer-img" alt="">
+    <p id="viewer-caption"></p>
+  </dialog>
+</body>
+</html>

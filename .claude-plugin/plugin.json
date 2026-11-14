@@ -1,0 +1,12 @@
+{
+  "name": "orca-multiselector",
+  "version": "0.1.0",
+  "description": "Local board that shows options produced in parallel by Orca workers side by side, so the user can pick one and paste the choice to the lead agent. Runs only when the user asks for it.",
+  "author": {
+    "name": "noble-shake",
+    "url": "https://github.com/noble-shake"
+  },
+  "repository": "https://github.com/noble-shake/ORCA-MultiSelector-Plugin",
+  "license": "MIT",
+  "keywords": ["orca", "orchestration", "parallel", "candidates", "selection"]
+}

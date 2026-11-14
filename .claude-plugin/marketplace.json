@@ -1,0 +1,14 @@
+{
+  "name": "orca-multiselector",
+  "description": "ORCA-MultiSelector-Plugin marketplace.",
+  "owner": {
+    "name": "noble-shake"
+  },
+  "plugins": [
+    {
+      "name": "orca-multiselector",
+      "source": "./",
+      "description": "Board for picking among options produced in parallel by Orca workers."
+    }
+  ]
+}
